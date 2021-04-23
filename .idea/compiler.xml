@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="barcode-product-service" />
+        <module name="barcode-erp-interface" />
+        <module name="barcode-registry" />
+        <module name="barcode-auth-service" />
+        <module name="barcode-gateway" />
+        <module name="barcode-user-service" />
+        <module name="barcode-common" />
+        <module name="barcode-item-interface" />
+        <module name="barcode-user-interface" />
+        <module name="barcode-item-service" />
+        <module name="barcode-model" />
+        <module name="barcode-sms" />
+        <module name="barcode-erp-service" />
+        <module name="barcode-auth-common" />
+        <module name="barcode-upload" />
+        <module name="barcode-cart" />
+        <module name="barcode-product-interface" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="barcode-auth" options="-parameters" />
+      <module name="barcode-auth-common" options="-parameters" />
+      <module name="barcode-auth-service" options="-parameters" />
+      <module name="barcode-cart" options="-parameters" />
+      <module name="barcode-common" options="-parameters" />
+      <module name="barcode-erp" options="-parameters" />
+      <module name="barcode-erp-interface" options="-parameters" />
+      <module name="barcode-erp-service" options="-parameters" />
+      <module name="barcode-gateway" options="-parameters" />
+      <module name="barcode-item" options="-parameters" />
+      <module name="barcode-item-interface" options="-parameters" />
+      <module name="barcode-item-service" options="-parameters" />
+      <module name="barcode-model" options="-parameters" />
+      <module name="barcode-product" options="-parameters" />
+      <module name="barcode-product-interface" options="-parameters" />
+      <module name="barcode-product-service" options="-parameters" />
+      <module name="barcode-registry" options="-parameters" />
+      <module name="barcode-sms" options="-parameters" />
+      <module name="barcode-upload" options="-parameters" />
+      <module name="barcode-user" options="-parameters" />
+      <module name="barcode-user-interface" options="-parameters" />
+      <module name="barcode-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

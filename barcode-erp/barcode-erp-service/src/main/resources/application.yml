@@ -1,0 +1,30 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: erp-service
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@172.22.16.85:1521:PROD
+    username: apps
+    password: apps2010jan
+    ## Hikari连接池的设置
+    #最小连接
+    hikari:
+      minimum-idle: 5
+      #最大连接
+      maximum-pool-size: 15
+      #自动提交
+      auto-commit: true
+      #最大空闲时常
+      idle-timeout: 30000
+      #连接池名
+      pool-name: DatebookHikariCP
+      #最大生命周期
+      max-lifetime: 900000
+      #连接超时时间
+      connection-timeout: 15000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka

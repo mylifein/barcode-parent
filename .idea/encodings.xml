@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/barcode-auth/barcode-auth-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-auth/barcode-auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-auth/barcode-auth-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-cart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-erp/barcode-erp-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-erp/barcode-erp-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-item/barcode-item-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-item/barcode-item-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-item/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-item/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-product/barcode-product-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-product/barcode-product-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-sms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-upload/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-user/barcode-user-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/barcode-user/barcode-user-service/src/main/java" charset="UTF-8" />
+  </component>
+</project>

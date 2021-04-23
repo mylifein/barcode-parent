@@ -1,0 +1,26 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: item-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/leyou?characterEncoding=UTF-8
+    username: kervin
+    password: 12345
+    driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    host: 192.168.137.139
+    username: root
+    password: root
+    virtual-host: /barcode
+    template:
+      exchange: LEYOU.ITEM.CHANGE
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+mybatis:
+  type-aliases-package: com.chenbro.item.pojo

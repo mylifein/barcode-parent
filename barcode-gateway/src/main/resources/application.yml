@@ -1,0 +1,32 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: barcode-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    registry-fetch-interval-seconds: 5
+zuul:
+  prefix: /api
+  routes:
+    item-service: /item/**  # 路由到Item的微服务
+    user-service: /user/**  # 路由到User的微服务
+    auth-service: /auth/**  # 路由到Auth的微服务
+    cart-service: /cart/**  # 路由到Cart的微服务
+  add-host-header: true
+  sensitive-headers:  # 覆盖默认敏感头信息
+barcode:
+  jwt:
+    pubKeyPath: D:\\Java\RSA\\rsa.pub # 公钥地址
+    cookieName: CB_TOKEN
+  filter: # - 开头的路径代表是一个集合
+    allowPaths:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item
+

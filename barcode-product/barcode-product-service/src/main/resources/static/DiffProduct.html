@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CHENBRO | Barcode</title>
+    <link rel="shortcut icon" href="images/barcode.ico" type="image/x-icon">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet"
+          href="js/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <link rel="stylesheet" href="js/plugins/fontawesome-free/css/v4-shims.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <!-- Buttons -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="js/plugins/toastr/toastr.min.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="js/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="js/plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="js/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">报表</h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">报表</a></li>
+                            <li class="breadcrumb-item active">库存报表</li>
+                        </ol>
+                    </div><!-- /.col -->
+
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+
+        <!-- Main content -->
+        <section class="content">
+            <!-- Default box -->
+
+            <div class="card">
+                <div class="card card-info">
+                    <div class="card card-header">
+                        <h3 class="card-title">库存报表</h3>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-info float-right" id="queryBtn">查询</button>
+                    </div>
+                </div>
+                <div class="card card-body p-0">
+                    <table id="displayTable" class="table table-striped projects">
+                        <thead>
+                        <th>客户料号</th>
+                        <th>出货料号</th>
+                        <th>产品名</th>
+                        <th>产品数量</th>
+                        <th>仓库名</th>
+                        <th>ERP数量</th>
+                        <th>库别代码</th>
+                        <th>数量差异</th>
+                        <th>数据批次</th>
+                        </thead>
+                    </table>
+                </div>
+
+                <!-- /.card-body -->
+                <div class="card-footer">
+                </div>
+            </div>
+            <!-- /.card -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+
+    <!-- Control Sidebar  foot jsp include -->
+    <!-- /.control-sidebar -->
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2020 <a href="#">CHENBRO</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 1.0
+        </div>
+    </footer>
+</div>
+<!-- ./wrapper -->
+<!-- jQuery -->
+<script src="js/plugins/jquery/jquery.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="js/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="dist/js/demo.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="js/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="js/plugins/raphael/raphael.min.js"></script>
+<script src="js/plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="js/plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="js/plugins/chart.js/Chart.min.js"></script>
+
+<!-- PAGE SCRIPTS -->
+<script src="dist/js/pages/dashboard2.js"></script>
+<!-- SweetAlert2 -->
+<script src="js/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="js/plugins/toastr/toastr.min.js"></script>
+<!-- DataTables -->
+<script src="js/plugins/datatables/jquery.dataTables.js"></script>
+<script src="js/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<!-- Buttons -->
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    var $displayTable = null;
+
+    $(function () {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+        });
+
+        $('#queryBtn').click(function () {
+            $.ajax({
+                url: 'product/diffstocks',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (data) {
+                        if ($displayTable == null) {
+                            $displayTable = initTable(data);
+                        } else {
+                            $('#displayTable').dataTable().fnDestroy();
+                            $displayTable = initTable(data);
+                        }
+                    } else {
+                        Toast.fire({
+                            type: 'warning',
+                            title: '查询失败：,'
+                        })
+                    }
+                },
+                error: function () {
+                    Toast.fire({
+                        type: 'warning',
+                        title: '查询错误，请检查是否登录超时'
+                    })
+                }
+
+            })
+        })
+    });
+
+
+
+    function initTable(data) {
+        return $('#displayTable').dataTable({
+            "dom": 'Bfrtip',
+            "buttons": [
+                {
+                    extend: 'excelHtml5',
+                    text: '导出excel',
+                    exportOptions: {columns: [ 0, 1, 2, 3, 4, 5, 6, 7, 8]}
+                }
+            ],
+            "paging": true,
+            "bLengthChange": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "data": data,
+            "columns": [{data: 'cusMatno'}, {data: 'delMatno'}, {data: 'prodName'}, {data: 'toatalQty'}, {data: 'wmName'}, {data: 'erpQty'}, {data: 'subCode'}, {data: 'diffQty'}, {data: 'replyId'}],
+        })
+    }
+
+</script>
+</body>
+</html>

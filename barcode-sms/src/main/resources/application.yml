@@ -1,0 +1,16 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: sms-service
+  rabbitmq:
+    host: 192.168.137.139
+    virtual-host: /barcode
+    username: root
+    password: root
+barcode:
+  sms:
+    accessId: LTAI4GCpaN1i9zp7WZGC1dRv
+    accessKeySecret: CPqXKY39RxYn06h7c8XkwhEDvMQ4n5
+    signName:
+    verifyCodeTemplate:

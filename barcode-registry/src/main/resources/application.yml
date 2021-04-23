@@ -1,0 +1,14 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: chenbro-eureka  #將來作爲微服務的名稱注入到eureka容器
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    eviction-interval-timer-in-ms: 5000  #剔除无效连接的时间间隔
+    enable-self-preservation: true   #关闭自我保护

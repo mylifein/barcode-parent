@@ -1,0 +1,18 @@
+# Project exclude paths
+/barcode-auth/barcode-auth-common/target/
+/barcode-auth/barcode-auth-service/target/
+/barcode-cart/target/
+/barcode-common/target/
+/barcode-erp/barcode-erp-interface/target/
+/barcode-erp/barcode-erp-service/target/
+/barcode-gateway/target/
+/barcode-item/barcode-item-interface/target/
+/barcode-item/barcode-item-service/target/
+/barcode-model/target/
+/barcode-product/barcode-product-interface/target/
+/barcode-product/barcode-product-service/target/
+/barcode-registry/target/
+/barcode-sms/target/
+/barcode-upload/target/
+/barcode-user/barcode-user-interface/target/
+/barcode-user/barcode-user-service/target/
